@@ -67,5 +67,15 @@ public class Message {
         return date;
     }
 
-
+    @Override
+    public String toString() {
+        return "Message{" +
+                "category=" + category +
+                ", sender='" + sender + '\'' +
+                ", address='" + address + '\'' +
+                ", receiver='" + receiver + '\'' +
+                ", id=" + id +
+                ", date=" + date +
+                '}';
+    }
 }

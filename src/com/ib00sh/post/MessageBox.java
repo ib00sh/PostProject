@@ -1,5 +1,7 @@
 package com.ib00sh.post;
 
+import java.util.Arrays;
+
 public class MessageBox {
     private Message[] messages;
     private int current;
@@ -17,5 +19,12 @@ public class MessageBox {
         messages[current] = message;
         current++;
         return message.getId();
+    }
+
+    @Override
+    public String toString() {
+        return "MessageBox{" +
+                "messages=" + Arrays.toString(messages) +
+                '}';
     }
 }
